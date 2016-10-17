@@ -25,8 +25,9 @@
 .reveal h3 {
     font-size: 35px;
 }
+
 .reveal ul li {
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .wide li {
@@ -44,7 +45,7 @@
 }
 
 .reveal pre code {
-    max-height:450px;
+    max-height: 450px;
     padding: 0 25px;
 }
 
@@ -53,7 +54,7 @@
 }
 
 #intro h3 {
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 #intro img,
@@ -62,15 +63,16 @@
 }
 
 #ng-be-shameless-promotion img {
-    height:300px;
+    height: 300px;
 }
 
 .reveal img.big {
     box-shadow: none;
+    height:200px;
 }
 
 #intro img.small {
-    width: 20%;
+    width: 10%;
     margin-right: 20px;
     margin-left: 20px;
     padding: 30px;
@@ -80,14 +82,14 @@
 
 }
 
-.reveal .frameworklogo{
-    width:50%;
+.reveal .frameworklogo {
+    width: 50%;
     border: none;
-    padding:20px;
-    margin-bottom:40px;
+    padding: 20px;
+    margin-bottom: 40px;
 }
 
 #thanks img {
     border-radius: 500px;
-    max-height:200px;
+    max-height: 200px;
 }

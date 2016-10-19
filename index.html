@@ -143,10 +143,11 @@
 
         <section id="why-a-mobile-application">
 
-            <h3>Why a (mobile) application?</h3>
+            <h2>Why a (mobile) application?</h2>
 
             <ul>
                 <li>Quick overview of schedule & speakers</li>
+                <li>Auth via social providers or email</li>
                 <li>Favorite sessions</li>
                 <li>Rate sessions & provide feedback</li>
             </ul>
@@ -194,7 +195,7 @@
             <ul class="fragment">
                 <li>Community support</li>
                 <li>Avoiding silos or isolated teams</li>
-                <li>Company knowledge</li>
+                <li>Company internal knowledge</li>
                 <li>Business requirements</li>
             </ul>
 
@@ -206,19 +207,93 @@
 
             <ul class="fragment">
                 <li>The hype & coolfactor</li>
-                <li>The technology that you've chosen</li>
+                <li>
+                    In the end, the technology chosen <br/>
+                    (the user doesn't care)
+                </li>
             </ul>
 
         </section>
 
         <section id="secondary-questions">
-            <h3>Secondary questions:</h3>
+            <h2>Secondary questions:</h2>
             <ul>
                 <li>Progressise web app or native mobile app?</li>
                 <li>Need for native capabilities?</li>
                 <li>Native user experience?</li>
                 <li>Write once run everywhere?</li>
                 <li>Or a combination?</li>
+            </ul>
+        </section>
+
+        <section id="progressive-webapp">
+            <h2>Progressive webapp?</h2>
+            <h3>Ionic 2 || Responsive web app</h3>
+            <ul class="fragment" style="margin-top:50px;">
+                <li>+ Offline support / Service workers / manifest</li>
+                <li>+ Write once, run everywhere</li>
+                <li>- Possible laggy UI</li>
+                <li>- Native support via Cordova</li>
+            </ul>
+        </section>
+
+        <section id="progressive-webapp">
+            <h2>Native app</h2>
+            <h3>Android || iOs || WP</h3>
+            <ul class="fragment" style="margin-top:50px;">
+                <li>+ Great UI experience</li>
+                <li>+ Optimized per platform</li>
+                <li>- platform specific code</li>
+                <li>- high dev cost</li>
+            </ul>
+        </section>
+
+        <section id="combination">
+            <h2>Combination</h2>
+            <h3>React native || NativeScript || Xamarin</h3>
+            <ul class="fragment" style="margin-top:50px;">
+                <li>+ Write JavaScript</li>
+                <li>+ Compile to native app</li>
+                <li>- platform specific templates/code</li>
+                <li>- yet another thing to learn</li>
+            </ul>
+        </section>
+
+        <section id="than-why-ionic">
+            <h2>Why Ionic 2:</h2>
+            <ul>
+                <li>The write once run everywhere principle</li>
+                <li>Convenient ( expert in HTML5 & Angular2 )</li>
+                <li class="fragment">I wanted to learn it :)</li>
+            </ul>
+        </section>
+
+        <section id="than-why-ionic">
+            <h2>The NG-BE 2016 application</h2>
+            <ul>
+                <li>Ionic 2 & Angular 2</li>
+                <li>TypeScript</li>
+                <li>
+                    Firebase &#128293;:<br/><br/>
+                    <ul>
+                        <li>Realtime!</li>
+                        <li>AUTH out of the box</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="demo">
+            <h2>Demo time!</h2>
+        </section>
+
+        <section id="things-to-remember">
+            <h2>Things to remember</h2>
+
+            <ul>
+                <li>Choose technology carefully</li>
+                <li>Firebase &#128293; is awesome!</li>
+                <li>Keep on learning</li>
             </ul>
         </section>
 
@@ -287,8 +362,10 @@
         ]
     });
 
+    var trumping;
     Reveal.addEventListener('ready', function (event) {
         handleSlide(event.currentSlide);
+
     });
 
     Reveal.addEventListener('slidechanged', function (event) {
@@ -296,10 +373,16 @@
     });
 
     function handleSlide(currentSlide) {
+
+        if (trumping) {
+            clearInterval(trumping);
+        }
+
         if (currentSlide.id === 'trump') {
-            setTimeout(function () {
-                $('#trump h3').show();
-            }, 4500);
+            euhTrump();
+            trumping = setInterval(function () {
+                euhTrump();
+            }, 5900);
         }
 
         if (currentSlide.id !== 'skeptical' && currentSlide.id !== 'lookslike') {
@@ -316,6 +399,15 @@
             showTech('lookslike', 8);
 
         }
+    }
+
+    function euhTrump() {
+        setTimeout(function () {
+            $('#trump h3').show();
+            setTimeout(function () {
+                $('#trump h3').hide();
+            }, 1400);
+        }, 4500);
     }
 
     function showTech(container, number) {

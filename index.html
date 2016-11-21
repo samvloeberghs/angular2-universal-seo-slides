@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
 
-    <title>NG-BE 2016 conference application with Ionic 2 & Angular 2</title>
+    <title>Optimise your SPA for SEO & Social providers with Angular 2 & Universal</title>
 
-    <meta name="description" content="Protractor - Fully E2E testing framework">
+    <meta name="description" content="Optimise your SPA for SEO & Social providers with Angular 2 & Universal">
     <meta name="author" content="Sam Vloeberghs">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -47,9 +47,7 @@
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
         <section id="intro">
-            <img src="img/ngbe.svg" alt="Angular 2 logo" class="big"/>
-            <h1></h1>
-            <h3>Optimise your SPA for SEO & loadtime w/ Angular 2 & Universal</h3>
+            <h3>Optimise your SPA for SEO & Social providers <br/> w/ Angular 2 & Universal</h3>
 
             <img src="img/angular2.png" alt="Angular logo" class="small"/>
             <img src="img/universal.png" alt="Ionic logo" class="small"/>
@@ -59,6 +57,24 @@
                         href="http://twitter.com/samvloeberghs">@samvloeberghs</a></small>
             </p>
         </section>
+        <section id="headlines-js-spas-and-search">
+            <ul class="quotes">
+                <li>"JavaScript hurts your SEO"</li>
+                <li class="fragment">"Warning: Angular JS is Killing Your SEO Efforts"</li>
+                <li class="fragment">"While AngularJS itself is a Google open source project, even their search engine
+                    doesn't support AngularJS fully"
+                </li>
+            </ul>
+        </section>
+        <section id="what-we-expect-1" data-background="img/problems/expected_1.png" data-background-size="contain" data-background-color="#fff">
+        </section>
+        <section id="what-we-got-1" data-background="img/problems/problem_1.png" data-background-size="contain" data-background-color="#fff">
+        </section>
+        <section id="what-we-expect-2" data-background="img/problems/expected_2.png" data-background-size="contain" data-background-color="#fff">
+        </section>
+        <section id="what-we-got-2" data-background="img/problems/problem_2.png" data-background-size="contain" data-background-color="#fff">
+        </section>
+
         <section id="who-am-i">
             <h1>who am i?</h1>
             <img src="img/samvloeberghs.jpg" alt="Sam Vloeberghs" id="profilepic"/>
@@ -76,6 +92,132 @@
             </p>
         </section>
 
+        <section id="things-to-remember">
+            <h2>Problems to solve</h2>
+
+            <ul>
+                <li>You want your app to be indexed</li>
+                <li>You want your app to be search engine friendly</li>
+                <li>You want your app to be shareable</li>
+            </ul>
+        </section>
+
+        <section id="essentials-of-seo">
+            <h2>The essentials of indexing & SEO</h2>
+
+            <ul>
+                <li>The semantic web</li>
+                <li>Well formed & readably URLS</li>
+                <li>A quick response time</li>
+                <li>HTTPS favorited over HTTP</li>
+                <li>Avoid the grayzone</li>
+            </ul>
+
+        </section>
+
+        <section id="essentials-of-social-sharing">
+            <h2>The essentials of social sharing</h2>
+
+            <ul>
+                <li>
+                    Facebook &amp; LinkedIn use opengraph protocol<br />
+                    <small>
+                    Facebook details / best practices: <a href="https://developers.facebook.com/docs/sharing/best-practices" target="_blank">link</a>
+                    <br />
+                    LinkedIn details / best practices: <a href="https://developer.linkedin.com/docs/share-on-linkedin#!" target="_blank">link</a>
+                    </small>
+                    <br /><br />
+                </li>
+                <li>
+                    Twitter uses it's own standard protocol <br />
+                    <small>
+                        Twitter details / best practices: <a href="https://dev.twitter.com/cards/types/summary" target="_blank">link</a>
+                    </small>
+                </li>
+            </ul>
+        </section>
+
+        <section id="workarounds-for-non-isomorphic-frameworks-1">
+            <h2>Workarounds for non isomorphic frameworks (1)</h2>
+
+            <ul>
+                <li>
+                   <strong>Prerender.io</strong>
+                </li>
+                <li>
+                    Render your S.P.A. on the server
+                </li>
+                <li>
+                    Uses PhantomJS as a headless browser
+                </li>
+                <li>
+                    Somewhat in the grey zone
+                </li>
+            </ul>
+
+            <p>
+                <small>&copy; next overview image by <a href="https://prerender.io/">Prerender.io</a></small>
+            </p>
+
+        </section>
+
+        <section id="workaround-for-non-isomorphic-frameworks-1-example" data-background-image="img/workaround_1.png" data-background-size="contain" data-background-color="#fff">
+        </section>
+
+        <section id="workarounds-for-non-isomorphic-frameworks-2">
+            <h2>Workarounds for non isomorphic frameworks (2)</h2>
+
+            <ul>
+                <li>
+                    <strong>Use a serverside language</strong>
+                </li>
+                <li>
+                    Renders essential parts on the server
+                </li>
+                <li>
+                    Is incomplete, mostly does the meta tags
+                </li>
+            </ul>
+
+            <p>
+                <small>&copy; next example image by <a href="http://www.michaelbromley.co.uk/blog/171/enable-rich-social-sharing-in-your-angularjs-app">Michael Bromley</a></small>
+            </p>
+
+        </section>
+
+        <section id="workaround-for-non-isomorphic-frameworks-2-example" data-background-image="img/workaround_2.png" data-background-size="contain" data-background-color="#fff">
+        </section>
+
+        <section id="the-better-solution-isomorphic-js-libraries">
+
+            <h2>Isomorphic libraries to the rescue!</h2>
+
+            <img src="img/reactjs.png" alt="ReactJS logo" class="small"/>
+            <img src="img/ember.png" alt="Ember logo" class="small"/>
+            <img src="img/meteor.png" alt="Meteor logo" class="small"/>
+            <img src="img/universal.png" alt="Universal logo" class="small"/>
+
+            <p>
+                <small>.. and others ..</small>
+            </p>
+
+        </section>
+
+        <section>
+            <h2>Isomorphic (/Universal)?</h2>
+
+            <ul>
+                <li>run on both client-side and server-side</li>
+                <li>seo-friendly</li>
+                <li>fast rendering & speed</li>
+            </ul>
+
+        </section>
+
+        <section id="demo">
+            <h2>Demo</h2>
+        </section>
+
         <section id="ng-be-shameless-promotion">
             <h1>NG-BE 2016</h1>
 
@@ -89,14 +231,6 @@
                 <br/>
                 1 day <strong>conference</strong>
             </p>
-        </section>
-
-        <section id="things-to-remember">
-            <h2>Things to remember</h2>
-
-            <ul>
-                <li></li>
-            </ul>
         </section>
 
         <section id="thank-you">

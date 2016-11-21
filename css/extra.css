@@ -57,8 +57,7 @@
     text-transform: none;
 }
 
-#intro img,
-#ng-be-shameless-promotion img {
+.reveal section img {
     border: none;
 }
 
@@ -72,14 +71,10 @@
 }
 
 #intro img.small {
-    width: 10%;
+    width: 20%;
     margin-right: 20px;
     margin-left: 20px;
     padding: 30px;
-}
-
-.reveal img.small#cucumber {
-
 }
 
 .reveal .frameworklogo {
@@ -94,65 +89,14 @@
     max-height: 200px;
 }
 
-/* SKEPTICAL */
-#skeptical {
-
+.reveal ul.quotes li {
+    margin-bottom: 40px;
+    list-style: none;
+    font-style: italic;
 }
 
-.tech {
-    position: absolute;
-    height: 150px;
-    box-shadow: none !important;
-    border: none !important;
-    max-height: none !important;
-    max-width: none !important;
-}
-
-.tech1 {
-    top: 150px;
-    right: 40px;
-}
-
-.tech2 {
-    top: 195px;
-    right: 260px;
-}
-
-.tech3 {
-    bottom: 50px;
-    right: 100px;
-}
-
-.tech4 {
-    bottom: 125px;
-    left: 560px;
-}
-
-.tech5 {
-    bottom: 100px;
-    left: 150px;
-}
-
-.tech6 {
-    top: 130px;
-    left: 0px;
-}
-
-.tech7 {
-    bottom: 150px;
-    left: 375px;
-}
-
-.tech8 {
-    top: 195px;
-    right: 600px;
-}
-
-.tech9 {
-    top: 195px;
-    right: 430px;
-}
-
-#trump h3 {
-    display: none;
+#the-better-solution-isomorphic-js-libraries img {
+    width: 20%;
+    margin-right: 20px;
+    margin-left: 20px;
 }
